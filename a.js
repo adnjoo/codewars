@@ -6,7 +6,7 @@ const isPalindrome = (x) =>
 console.log(isPalindrome("Abba"));
 
 function likes(names) {
-  // TODO
+  // switch-case next time
   let name = "no one";
   let append = " likes this";
   let append2 = " like this";
