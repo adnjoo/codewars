@@ -11,7 +11,7 @@ function arrayMadness(a, b) {
   for (i of b) {
     sum2 += i * i * i;
   }
-  return sum1 > sum2 ? true : false;
+  return sum1 > sum2
 }
 
 
