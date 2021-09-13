@@ -1,8 +1,39 @@
-function nameSuffle(str){
+//better
+const paintLetterboxes = (start, end) => {
+  let res = Array(10).fill(0);
+  for (let i = start; i <= end; i++) {
+    for (let n of (i + '')) {
+      res[n]++;
+    }
+  }
+  return res;
+}
+
+
+var paintLetterboxes = function (s, e) {
+  //create object
+  let obj = {};
+  for (i = 0; i < 10; i++) {
+    // console.log(i)
+    obj[i] = 0;
+  }
+  // console.log(obj)
+  //loop from s to e
+  for (i = s; i <= e; i++) {
+    let x = i.toString().split("");
+    for (j in x) {
+      obj[x[j]]++;
+    }
+  }
+  // console.log(obj);
+  return Object.values(obj);
+};
+
+function nameShuffle(str){
   return str.split(' ').reverse().join(' ')
 }
 
-function nameSuffle(str){
+function nameShuffle(str){
   var name = str.split(' ');
   return name[1] + ' ' + name[0];
 }
