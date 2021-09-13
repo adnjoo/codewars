@@ -1,4 +1,31 @@
 //better
+var moveZeros = function (arr) {
+  return arr.filter(function(x) {return x !== 0}).concat(arr.filter(function(x) {return x === 0;}));
+}
+
+// 5 kyu
+const moveZeros = (arr) => {
+  console.log('arr given', arr)
+  let i = 0;
+  while (i < arr.length) {
+    if (arr[i] === 0) {
+      arr.push(...arr.splice(i, 1));
+      console.log('idx',i)
+      console.log('arr after',arr)
+      i--;
+      // if all idx after i are 0 then return
+      let small = arr.slice(i+1)
+      console.log(small)
+      if(small.reduce((a,b)=>{return a+b})==0){
+        return arr
+      }
+    }
+    i++;
+  }
+  console.log(arr);
+};
+
+//better
 const arrayMadness = (a, b) => a.reduce((acc, x) => acc + x**2, 0) > b.reduce((acc, x) => acc + x**3, 0) 
 
 //try
