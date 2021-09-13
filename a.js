@@ -1,3 +1,15 @@
+//practice
+function divide(weight) {
+  return !(weight % 2);
+}
+console.log(divide(5));
+console.log(divide(4));
+
+//ergo 1 is true, 0 is false
+
+// not 1 is false
+console.log(!1);
+
 //watermelon
 function divide(weight){
     if(weight == 2){
