@@ -1,4 +1,59 @@
 //better
+function mergeArrays(a, b) {
+  // your code here
+  var returnArray = [];
+  var counter = 0;
+  while (a[counter] || b[counter] ){
+    if(a[counter]){
+      returnArray.push(a[counter]);
+    }
+    if(b[counter]){
+      returnArray.push(b[counter]);
+    }
+    counter++;
+    
+   }
+   return returnArray;
+}
+//better
+function mergeArrays(a, b) {
+  let j = [],
+      longest = a.length > b.length ? a:b;
+  for (var i=0; i<longest.length; i++){
+    if (a[i]) j.push(a[i])
+    if (b[i]) j.push(b[i])
+  }
+  return j
+}
+//can improve
+function mergeArrays(a, b) {
+  console.log(a,b)
+  //2 different lengths
+  let arr = [];
+  let counter = 1;
+  while (a.length > 0 || b.length > 0) {
+//     console.log('arr is', arr)
+    if (counter % 2 > 0) { //odd
+      //delete from first array
+      if(a.length>0){
+        arr.push(a.shift());
+      } else {
+        arr.push(b.shift());
+      }
+      counter++
+    } else {
+      if(b.length>0){
+        arr.push(b.shift());
+      } else {
+        arr.push(a.shift());
+      }
+      counter++
+    }
+  }
+  return arr;
+}
+
+//better
 const paintLetterboxes = (start, end) => {
   let res = Array(10).fill(0);
   for (let i = start; i <= end; i++) {
