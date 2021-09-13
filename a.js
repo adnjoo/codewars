@@ -1,3 +1,9 @@
+//boxlines
+function f(x, y, z) {
+    return (x + 1) * (y + 1) * z + (x + 1) * y * (z + 1) + x * (y + 1) * (z + 1);
+}
+
+//isPalindrome
 const isPalindrome = (x) =>
   x.toLowerCase() === x.toLowerCase().split("").reverse().join("")
     ? true
@@ -5,8 +11,8 @@ const isPalindrome = (x) =>
 
 console.log(isPalindrome("Abba"));
 
+//who likes it?
 function likes(names) {
-  // switch-case next time
   let name = "no one";
   let append = " likes this";
   let append2 = " like this";
