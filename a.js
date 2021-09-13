@@ -1,3 +1,18 @@
+//watermelon
+function divide(weight){
+    if(weight == 2){
+        return false
+    } else if (weight % 2 > 0) {
+        return false
+    } else {
+        return true
+    }
+}
+//alternative
+function divide(weight){
+  return weight > 2 && !(weight % 2);
+}
+
 //boxlines
 function f(x, y, z) {
     return (x + 1) * (y + 1) * z + (x + 1) * y * (z + 1) + x * (y + 1) * (z + 1);
