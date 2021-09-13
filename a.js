@@ -1,3 +1,5 @@
+//The ^ operator is the bitwise XOR operator. To square a value, use Math.pow:
+
 //practice
 function divide(weight) {
   return !(weight % 2);
