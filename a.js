@@ -1,4 +1,21 @@
 //better
+const arrayMadness = (a, b) => a.reduce((acc, x) => acc + x**2, 0) > b.reduce((acc, x) => acc + x**3, 0) 
+
+//try
+function arrayMadness(a, b) {
+  let sum1 = 0,
+    sum2 = 0;
+  for (i of a) {
+    sum1 += i * i;
+  }
+  for (i of b) {
+    sum2 += i * i * i;
+  }
+  return sum1 > sum2 ? true : false;
+}
+
+
+//better
 function bigToSmall(arr) {
   return [].concat(...arr).sort((a, b) => b - a).join('>');
 }
