@@ -1,4 +1,21 @@
 //better
+function bigToSmall(arr) {
+  return [].concat(...arr).sort((a, b) => b - a).join('>');
+}
+
+//first try
+function bigToSmall(arr) {
+  let arr2 = [];
+  for (i in arr) {
+    arr2 = arr2.concat(arr[i]);
+  }
+  arr2.sort((a, b) => b - a);
+  arr2=arr2.join('>');
+  console.log(arr2);
+  return arr2;
+}
+
+//better
 function mergeArrays(a, b) {
   // your code here
   var returnArray = [];
