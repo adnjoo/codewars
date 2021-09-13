@@ -1,3 +1,12 @@
+function nameSuffle(str){
+  return str.split(' ').reverse().join(' ')
+}
+
+function nameSuffle(str){
+  var name = str.split(' ');
+  return name[1] + ' ' + name[0];
+}
+
 //The ^ operator is the bitwise XOR operator. To square a value, use Math.pow:
 
 //practice
