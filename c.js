@@ -1,25 +1,50 @@
-//leetcode easy
-const flipAndInvertImage =(image) => {
-    let arr = []
-    for(i in image){
-      //reversed row
-      let x = image[i].reverse()
-      for(j in x){
-        if(x[j]==0){
-          x[j] =1
-        } else {
-          x[j]=0
-        }
-      }
-      arr.push(x)
-    }
-    // console.log(arr)
-    return arr
-};
+// return the minimum number of positive deci-binary numbers
+// needed so that they sum up to n.
 
-flipAndInvertImage([[1,1,0],[1,0,1],[0,0,0]])
+// const minPartitions = (n) => {
+//   // change to digits array
+//   n = String(n).split("");
+//   let regex = /[2-9]/;
+//   let check = false;
+//   for (i in n) {
+//     if (n[i].match(regex)) {
+//       check = true;
+//     }
+//   }
+//   //if number contains only 1s and 0s, then return 1 e.g. 101010101
+//   if (!check) {
+//     return 1;
+//   }
+//   //else find highest digit
+//   n = n.map((x)=>Number(x)).sort()
+//   console.log(n);
+//   return n[n.length-1]
+//   // else return highest digit in n
+// };
 
-// Input: image = [[1,1,0],[1,0,1],[0,0,0]]
-// Output: [[1,0,0],[0,1,0],[1,1,1]]
-// Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].
-// Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
+// console.log(minPartitions(32));
+// console.log(minPartitions(82734));
+// console.log(minPartitions(27346209830709182346));
+
+// if n = 10
+// min is  10
+
+// max is 9
+
+// Example 1:
+
+// Input: n = "32"
+// Output: 3
+// Explanation: 10 + 11 + 11 = 32
+// Example 2:
+
+// Input: n = "82734"
+// Output: 8
+// Example 3:
+// first # 11111, 11111, 10111, 10101, 10100, 10100, 10100, 10000
+
+// Input: n = "27346209830709182346"
+// Output: 9
+
+// var arr = [11111, 11111, 10111, 10101, 10100, 10100, 10100, 10000];
+// console.log(arr.reduce((a, b) => a + b));
