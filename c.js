@@ -1,30 +1,39 @@
 const removeOuterParentheses = (s) => {
-    console.log(s)
     s=s.split('')
-    // remove if ( not follow by )
-    let i = 0 ;
-    while(i<s.length){
-        // console.log(s[i], i )
-        // console.log(s[i], s[i+1])
-        if(s[i]=='(' && s[i+1]=='(' || s[i]==')' && s[i+1]==')'){
-            console.log('test', i)
-            s.splice(i,1)
-            i--
+    let arr =[]
+    let counter = 0
+    let left = 0, right = 0
+
+    for(let i =0;i<s.length;i++){
+        if(s[i]=='('){
+            left++
         }
-        i++
+        if(s[i]==')'){
+            right++
+        }
+        if(left==right && left > 0){
+            left=0
+            right=0
+            arr.push(s.slice(counter,i+1))
+            counter = i +1 
+        }
     }
-    console.log(s)
+    for (i in arr){
+        arr[i].pop()
+        arr[i].shift()
+    }
+    return ('arr', arr.join('').replace(/,/g,''))
 };
 
-let s = "(()())(())"
-let s2 = '(()())(())(()(()))'
-let s3= '(())()()()'
+//s will be valid parentheses string
+// valid parens has equal number of left and right parens
 
-removeOuterParentheses(s)
-removeOuterParentheses(s2)
-// Input: s = "(()())(())"
-// Output: "()()()"
+let s3 = "(()())(())(()(()))"
+removeOuterParentheses(s3)
 
+// (()())(())(()(()))
+// 1 (()()) 2 (()) 3 (()(()))
 
-if doesnt contain (( or ))
+// when left = right parens split
 
+//1 left 111 right 111
