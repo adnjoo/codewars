@@ -18,8 +18,13 @@ const removeOuterParentheses = (s) => {
 
 let s = "(()())(())"
 let s2 = '(()())(())(()(()))'
+let s3= '(())()()()'
 
 removeOuterParentheses(s)
 removeOuterParentheses(s2)
 // Input: s = "(()())(())"
 // Output: "()()()"
+
+
+if doesnt contain (( or ))
+
