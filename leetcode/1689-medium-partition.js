@@ -33,11 +33,11 @@ console.log(minPartitions(27346209830709182346))
 console.log(minPartitions(1010101010))
 
 // explanation
+// 82734 would be built of the following deci-binary numbers added together 
 // let arr = [11111, 11111, 10111, 10101, 10100, 10100, 10100, 10000];
 
 // console.log(arr.reduce((a, b) => a + b));
 
-//82734
 //n = 27346209830709182346
 
 //n = 1010101101011001100110101
