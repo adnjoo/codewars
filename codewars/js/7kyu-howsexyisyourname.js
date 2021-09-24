@@ -1,3 +1,5 @@
+// How sexy is your name?
+
 //shorter way
 const sexyName =name => {
   const n = [...name.toUpperCase()].reduce((a, b) => a + (SCORES[b] || 0), 0)
