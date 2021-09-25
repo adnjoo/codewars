@@ -1,4 +1,3 @@
-//1021
 const removeOuterParentheses = (s) => {
   //first split the string
   s = s.split("");

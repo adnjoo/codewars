@@ -1,7 +1,8 @@
-/**
- * @param {number[]} arr
- * @return {void} Do not return anything, modify arr in-place instead.
- */
+// /**
+//  * @param {number[]} arr
+//  * @return {void} Do not return anything, modify arr in-place instead.
+//  */
+
 var duplicateZeros = function (arr) {
   let count = 0;
   while (count < arr.length) {
@@ -17,6 +18,7 @@ var duplicateZeros = function (arr) {
 
 let arr = [1, 0, 2, 3, 0, 4, 5, 0];
 duplicateZeros(arr);
+
 //if 0
 
 // Input: arr = [1,0,2,3,0,4,5,0]

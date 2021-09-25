@@ -1,10 +1,3 @@
-/**
- * @param {number} m
- * @param {number} n
- * @return {number}
- */
-
-//factorial helper-fn
 var f = [];
 function factorial(n) {
   if (n == 0 || n == 1) return 1;
@@ -12,8 +5,7 @@ function factorial(n) {
   return (f[n] = factorial(n - 1) * n);
 }
 
-var uniquePaths = (m, n) =>
-  factorial(m + n - 2) / (factorial(m - 1) * factorial(n - 1));
+var uniquePaths = (m, n) => factorial(m + n - 2) / (factorial(m - 1) * factorial(n - 1));
 
 // Input: m = 3, n = 7
 // (m + n - 2)! / ((m - 1)! * (n - 1)!).
