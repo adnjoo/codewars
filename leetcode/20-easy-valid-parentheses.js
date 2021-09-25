@@ -1,3 +1,10 @@
+// https://leetcode.com/problems/valid-parentheses/
+
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+
 var isValid = function (s) {
   //   remove (), [], {}
   while (s.includes("()") || s.includes("[]") || s.includes("{}")) {
@@ -6,6 +13,8 @@ var isValid = function (s) {
     s = s.replace("{}", "");
     console.log(s);
   }
-  return s.length > 0 ? false : true;
   //   console.log('s', s.length)
+  return s.length > 0 ? false : true;
 };
+
+// console.log(isValid("()"));
