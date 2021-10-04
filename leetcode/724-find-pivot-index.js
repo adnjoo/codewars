@@ -12,16 +12,14 @@ var pivotIndex = (n) => {
 };
 
 //first try
-var pivotIndex = function (nums) {
-  var sum = nums.reduce((num, curr, index) => num + curr, 0);
-  var currsum = 0;
-  for (let i = 0; i < nums.length; i++) {
-    if ((sum - nums[i]) / 2 == currsum) {
-      return i;
-    }
-    currsum += nums[i];
+var pivotIndex = n => {
+  for(let i = 0; i< n.length;i++){
+      let rhs = (i,n.slice(i+1).reduce((a,b)=> a+b,0)) //rhs
+      let lhs = (i,n.slice(0,i).reduce((a,b)=>a+b,0)) //lhs
+      console.log(i,rhs,lhs)
+      if(lhs==rhs) return i
   }
-  return -1;
+  return -1
 };
 
 let nums = [1, 7, 3, 6, 5, 6];
