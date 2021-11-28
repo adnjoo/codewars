@@ -13,3 +13,7 @@ var minTimeToType = function (word) {
     return counter;
   };
   
+
+minTimeToType("abc");
+minTimeToType("bza");
+minTimeToType("zjpc");
