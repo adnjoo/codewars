@@ -1,9 +1,8 @@
 var findGCD = function (nums) {
     nums.sort((a, b) => a - b);
-    let arr = [nums[0], nums[nums.length - 1]],
-      gcd = arr[0];
+    let arr = [nums[0], nums[nums.length - 1]]
     // find gcd of smallest
-    for (let i = gcd; i > 0; i--) {
+    for (let i = arr[0]; i > 0; i--) {
       if (arr[1] % i == 0 && arr[0] % i == 0) {
         return i;
       }
