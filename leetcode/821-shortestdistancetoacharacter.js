@@ -17,7 +17,7 @@ var shortestToChar = function (s, c) {
     let diffArr = occ.map((x) => Math.abs(idx - x));
     let minNumber = Math.min(...diffArr);
     let index = diffArr.findIndex((x) => x === minNumber);
-    console.log(Math.abs(idx - occ[index]));
+    // console.log(Math.abs(idx - occ[index]));
     arr.push(Math.abs(idx - occ[index]));
   });
   return arr;
