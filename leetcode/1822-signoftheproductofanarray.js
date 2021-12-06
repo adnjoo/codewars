@@ -1,13 +1,9 @@
-var arraySign = function (nums) {
-  if (nums.indexOf(0) >= 0) {
-    return 0;
+var arraySign = function(nums) {
+  if(nums.indexOf(0)>=0){
+    return 0
   }
-  let product = nums.reduce((a, b) => a * b);
-  if (product == 0) {
-    return 0;
-  } else {
-    return product > 0 ? 1 : -1;
-  }
+  let product = nums.reduce((a,b)=>a*b)
+  return product > 0 ? 1 : -1
 };
 
 let n1 = [-1, -2, -3, -4, 3, 2, 1],
