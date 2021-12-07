@@ -41,4 +41,7 @@ var lengthOfLongestSubstring = function (s) {
     lengthOfLongestSubstring(s3),
     lengthOfLongestSubstring(s4)
   );
+
+
+//help https://www.youtube.com/watch?v=4i6-9IzQHwo&ab_channel=MichaelMuinos
   
