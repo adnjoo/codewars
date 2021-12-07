@@ -15,3 +15,9 @@ var removeSubfolders = f => {
     // console.log('sorted',arr.sort(), arr.length)
     return arr.sort()
 };
+
+
+// let folder = ["/a","/a/b","/c/d","/c/d/e","/c/f"]
+// let folder = ["/a","/a/b/c","/a/b/d"]
+// let folder = ["/a/b/c","/a/b/ca","/a/b/d"]
+// let folder = ["/c","/d/c/e"]
