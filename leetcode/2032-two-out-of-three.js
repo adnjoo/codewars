@@ -1,8 +1,8 @@
 var twoOutOfThree = function (nums1, nums2, nums3) {
-    //sort array
+    // sort array
     let sorted = [nums1, nums2, nums3].sort((a, b) => b.length - a.length),
       arr = [];
-    //compares 1st array with 2nd and 3rd
+    // compares 1st array with 2nd and 3rd
     for (let i in sorted[0]) {
       if (
         sorted[1].indexOf(sorted[0][i]) > -1 ||
@@ -11,13 +11,13 @@ var twoOutOfThree = function (nums1, nums2, nums3) {
         arr.push(sorted[0][i]);
       }
     }
-    //compare 2nd array with 3rd
+    // compare 2nd array with 3rd
     for (let i in sorted[1]) {
       if (sorted[2].indexOf(sorted[1][i]) > -1) {
         arr.push(sorted[1][i]);
       }
     }
-    //remove duplicates
+    // remove duplicates
     return [...new Set(arr)];
   };
   

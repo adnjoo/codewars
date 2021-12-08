@@ -36,7 +36,7 @@ var uniqueMorseRepresentations = function (words) {
       });
       arr.push(str);
     });
-    //remove duplicates
+    // remove duplicates
     return [...new Set(arr)].length;
   };
   let w1 = ["gin", "zen", "gig", "msg"],

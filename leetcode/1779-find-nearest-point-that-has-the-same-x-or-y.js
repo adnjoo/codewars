@@ -79,7 +79,7 @@ let x4 = 23,
 
 console.log(
   // nearestValidPoint(x1,y1,p1),
-  // // Output: 2
+  // Output: 2
   // nearestValidPoint(x2,y2,p2),
   // nearestValidPoint(x3,y3,p3),
   nearestValidPoint(x4, y4, p4)

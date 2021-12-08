@@ -10,7 +10,7 @@ var lengthOfLongestSubstring = function (s) {
     for (let i = 0; i < s.length; i++) {
       if (set.indexOf(s[i]) >= 0) {
         while (j < i) {
-          //is s[i] not in set?
+          // is s[i] not in set?
           if (set.indexOf(s[i]) == -1) {
             break;
           }
@@ -43,5 +43,5 @@ var lengthOfLongestSubstring = function (s) {
   );
 
 
-//help https://www.youtube.com/watch?v=4i6-9IzQHwo&ab_channel=MichaelMuinos
+// guidance https://www.youtube.com/watch?v=4i6-9IzQHwo&ab_channel=MichaelMuinos
   

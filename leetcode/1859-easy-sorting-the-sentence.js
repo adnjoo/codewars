@@ -1,5 +1,5 @@
 var sortSentence = function (s) {
-  //find highest digit
+  // find highest digit
   var num = s
     .replace(/[^0-9]/g, "")
     .split("")
@@ -10,7 +10,7 @@ var sortSentence = function (s) {
   s = s.split(" ");
   // console.log(num, s)
   for (let i = 1; i < +num + 1; i++) {
-    //find word that contains number
+    // find word that contains number
     arr.push(s.find((x) => x.includes(i)).slice(0, -1));
   }
   return arr.join(" ");

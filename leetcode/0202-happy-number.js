@@ -1,8 +1,4 @@
-/**
- * @param {number} n
- * @return {boolean}
- */
- var isHappy = function (n) {
+var isHappy = function (n) {
     let arr = [];
     while (n != 1) {
       n = String(n)

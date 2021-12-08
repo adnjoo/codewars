@@ -9,5 +9,4 @@ let n1 = [3, 2, 1, 5, 6, 4],
 console.log(findKthLargest(n1, k1));
 
 
-// notes
-// https://www.programcreek.com/2014/05/leetcode-kth-largest-element-in-an-array-java/
+// guidance https://www.programcreek.com/2014/05/leetcode-kth-largest-element-in-an-array-java/

@@ -16,6 +16,6 @@ const makeDict = (x) => {
   let n1 = [1, 2, 3, 3],
     n2 = [2, 1, 2, 5, 3, 2],
     n3 = [5, 1, 5, 2, 5, 3, 5, 4];
-  // 3,2,5
+  // 3, 2, 5
   console.log(repeatedNTimes(n1), repeatedNTimes(n2), repeatedNTimes(n3));
   

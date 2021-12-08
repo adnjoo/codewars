@@ -1,11 +1,11 @@
-//faster
+// faster
 const finalValueAfterOperations = (o) => {
   let c = 0;
   o.forEach((x) => (x.includes("++") ? c++ : c--));
   return c;
 };
 
-//first try
+// first try
 var finalValueAfterOperations = function (o) {
   let counter = 0;
   for (let i = 0; i < o.length; i++) {

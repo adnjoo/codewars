@@ -10,7 +10,7 @@ var minMovesToSeat = function (seats, students) {
   return counter;
 };
 
-//seats, students
+// seats, students
 let x = [3, 1, 5],
   y = [2, 7, 4];
 let x1 = [4, 1, 5, 9],

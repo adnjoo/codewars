@@ -31,5 +31,5 @@ const makeDict = (x) => {
     checkAlmostEquivalent("cccddabba", "babababab")
   );
   
-  //use dictionary
+  // use dictionary
   

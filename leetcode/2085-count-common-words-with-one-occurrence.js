@@ -10,7 +10,7 @@ const makeDict = (x) => {
     let c1 = makeDict(w1);
     let c2 = makeDict(w2);
     let counter = 0;
-    //if value is 1 in c1 and c2 count ++
+    // if value is 1 in c1 and c2 count ++
     for (let i = 0; i < Object.keys(c1).length; i++) {
       if (c1[Object.keys(c1)[i]] == 1 && c2[Object.keys(c1)[i]] == 1) {
         counter++;

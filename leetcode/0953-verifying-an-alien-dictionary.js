@@ -10,16 +10,17 @@ var isAlienSorted = function (words, order) {
         dict[words[i + 1][j]] === undefined
       )
         return false;
-      if (dict[words[i][j]] < dict[words[i + 1][j]]) break; //if h comes before l break out of inner loop
+      // if h comes before l break out of inner loop
+      if (dict[words[i][j]] < dict[words[i + 1][j]]) break; 
     }
   }
   return true;
 };
 
 // let words = ["hello", "leetcode"],
-//   order = "hlabcdefgijkmnopqrstuvwxyz";
+// order = "hlabcdefgijkmnopqrstuvwxyz";
 // let words = ["word", "world", "row"],
-//   order = "worldabcefghijkmnpqstuvxyz";
+// order = "worldabcefghijkmnpqstuvxyz";
 let words = ["apple", "app"],
   order = "abcdefghijklmnopqrstuvwxyz";
 console.log(isAlienSorted(words, order));

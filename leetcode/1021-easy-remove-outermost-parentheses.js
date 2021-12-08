@@ -1,5 +1,5 @@
 const removeOuterParentheses = (s) => {
-  //first split the string
+  // first split the string
   s = s.split("");
   // console.log(s)
   let counter = 0;
@@ -13,7 +13,7 @@ const removeOuterParentheses = (s) => {
     if (s[i] == ")") {
       right++;
     }
-    //valid parentheses have same left and right number of parens
+    // valid parentheses have same left and right number of parens
     if (left == right && left > 0) {
       arr.push(s.slice(counter, i + 1));
       counter = i + 1;
@@ -29,7 +29,7 @@ const removeOuterParentheses = (s) => {
 let s2 = "(()())(())(()(()))";
 removeOuterParentheses(s2);
 
-//s2= (()())(())(()(()))
+// s2= (()())(())(()(()))
 // 1 (()()) 2 (())  3 (()(()))
 // 1 ()() 2 ()  3 ()(())
 

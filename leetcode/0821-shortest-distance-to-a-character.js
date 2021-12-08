@@ -13,7 +13,7 @@ var shortestToChar = function (s, c) {
   let occ = findAllOccurrences(s, c);
   console.log(occ);
   s = s.split("").forEach((el, idx) => {
-    //find closest number
+    // find closest number
     let diffArr = occ.map((x) => Math.abs(idx - x));
     let minNumber = Math.min(...diffArr);
     let index = diffArr.findIndex((x) => x === minNumber);

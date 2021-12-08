@@ -1,4 +1,4 @@
-//better
+// better
 var pivotIndex = (n) => {
   var sum = n.reduce((a, b) => a + b, 0);
   var lhs = 0;
@@ -11,15 +11,17 @@ var pivotIndex = (n) => {
   return -1;
 };
 
-//first try
-var pivotIndex = n => {
-  for(let i = 0; i< n.length;i++){
-      let rhs = (i,n.slice(i+1).reduce((a,b)=> a+b,0)) //rhs
-      let lhs = (i,n.slice(0,i).reduce((a,b)=>a+b,0)) //lhs
-      console.log(i,rhs,lhs)
-      if(lhs==rhs) return i
+// first try
+var pivotIndex = (n) => {
+  for (let i = 0; i < n.length; i++) {
+    // rhs
+    let rhs = (i, n.slice(i + 1).reduce((a, b) => a + b, 0));
+    // lhs
+    let lhs = (i, n.slice(0, i).reduce((a, b) => a + b, 0));
+    console.log(i, rhs, lhs);
+    if (lhs == rhs) return i;
   }
-  return -1
+  return -1;
 };
 
 let nums = [1, 7, 3, 6, 5, 6];

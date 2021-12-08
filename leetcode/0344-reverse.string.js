@@ -8,5 +8,5 @@ var reverseString = function(s) {
     }
 };
 
-//fast
+// fast
 const reverseString = (s)=>  s.reverse()

@@ -14,7 +14,7 @@ var maxNumberOfBalloons = function (text) {
   max = max[0];
   console.log(x, max);
   while (max > -1) {
-    //find highest number e.g. 2 check l, o are that number
+    // find highest number e.g. 2 check l, o are that number
     // b a n, should be at least half that number
     if (
       x["l"] >= 2 * max &&
