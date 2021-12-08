@@ -1,4 +1,3 @@
-// hi
 /**  hash map
  * time complexity: O(n)
  * space complexity: O(n)
