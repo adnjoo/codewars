@@ -1,3 +1,5 @@
+// dynamic programming
+// time complexity O(n) / linear time complexity
 var tribonacci = function (n) {
   // calc tribonacci on the fly
   let arr = [0, 1, 1];
@@ -17,7 +19,14 @@ var tribonacci = function (n) {
   return arr[n];
 };
 
-let n1 = 4,
-  n2 = 25;
+/* recursive algorithm
+time complexity / O(1.84^(n-1)).
+var tribonacci = (n) => {
+  return n == 0 ? 0 : n == 1 ? 1 : n == 2 ? 1 : tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3);
+}
+*/
 
-console.log(tribonacci(n1), tribonacci(n2));
+let n1 = 4,
+  n2 = 25, n3= 36;
+
+console.log(tribonacci(n1), tribonacci(n2), tribonacci(n3));
