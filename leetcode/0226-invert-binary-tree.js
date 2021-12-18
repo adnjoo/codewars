@@ -1,16 +1,6 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left, right) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.left = (left===undefined ? null : left)
- *     this.right = (right===undefined ? null : right)
- * }
- */
-/**
- * @param {TreeNode} root
- * @return {TreeNode}
- */
-// recursive
+// iterative method
+
+// recursive method
 var invertTree = function (root) {
   // L R then process
 
@@ -30,8 +20,50 @@ var invertTree = function (root) {
   return root;
 };
 
-let r1 = [4, 2, 7, 1, 3, 6, 9];
 
-console.log(invertTree(r1));
+let bt1 = {
+  val: 4,
+  left: {
+    val: 2,
+    left: {
+      val: 1,
+      left: null,
+      right: null
+    },
+    right: {
+      val: 3,
+      left: null,
+      right: null
+    }
+  },
+  right: {
+    val: 7,
+    left: {
+      val: 6,
+      left: null,
+      right: null
+    },
+    right: {
+      val: 9,
+      left: null,
+      right: null
+    }
+  }
+}
+
+console.log(
+  invertTree(bt1)
+)
+
+/*
+   4
+  2-7
+1-3-6-9
+
+   4
+  7-2
+9-6-3-1
+
+*/
 
 // advice: https://youtu.be/589pNBMX3dI
