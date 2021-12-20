@@ -1,0 +1,5 @@
+// almostIncreasingSequence
+
+function solution(sequence) {
+
+}
