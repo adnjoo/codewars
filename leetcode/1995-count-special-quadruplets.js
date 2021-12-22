@@ -24,8 +24,6 @@ let n1 = [1, 2, 3, 6],
   n2 = [3, 3, 6, 4, 5],
   n3 = [1, 1, 1, 3, 5];
 
-//   https://www.calculatorsoup.com/calculators/discretemathematics/combinations.php
-
 /*
   n3 
   quadruple loop
@@ -49,4 +47,5 @@ let n1 = [1, 2, 3, 6],
 
 console.log(countQuadruplets(n1), countQuadruplets(n2), countQuadruplets(n3));
 
+// NcR https://www.calculatorsoup.com/calculators/discretemathematics/combinations.php
 // help https://www.geeksforgeeks.org/count-quadruplets-with-sum-k-from-given-array/
