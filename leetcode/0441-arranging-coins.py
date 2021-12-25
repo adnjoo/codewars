@@ -1,4 +1,4 @@
-# why is this slow? 860ms
+# a bit slow? 860ms
 def arrangeCoins(self, n: int) -> int:
     sum = 0
     i = 1
