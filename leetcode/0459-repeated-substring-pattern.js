@@ -27,3 +27,4 @@ console.log(
 
 // find factors: https://www.geeksforgeeks.org/find-divisors-natural-number-set-1/
 // KMP algo: https://leetcode.com/problems/repeated-substring-pattern/discuss/94492/KMP-Javascript
+// KMP notes: https://www.youtube.com/watch?v=BXCEFAzhxGY&ab_channel=BackToBackSWE
