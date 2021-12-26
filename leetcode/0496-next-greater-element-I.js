@@ -1,4 +1,10 @@
+// try with stack
+
+
+
+
 // can we do this faster?
+// TC - O(n^2)
 var nextGreaterElement = function (nums1, nums2) {
   let arr = [];
   for (let i = 0; i < nums1.length; i++) {
