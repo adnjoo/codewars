@@ -36,3 +36,9 @@ console.log(
   // licenseKeyFormatting(s2,k2),
   licenseKeyFormatting(s3, k3)
 );
+
+
+/* 
+move backwards js help:
+https://leetcode.com/problems/license-key-formatting/discuss/353312/Basic-JavaScript-Solution
+*/
