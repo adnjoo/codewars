@@ -1,3 +1,4 @@
+// can be optimized
 var matrixReshape = function (mat, r, c) {
   // edge case
   if (r * c < mat.flat().length) return mat;
