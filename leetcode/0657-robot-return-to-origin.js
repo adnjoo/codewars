@@ -1,3 +1,18 @@
+// faster method using switch case
+var judgeCircle = function(moves) {
+  let x = 0, y = 0;
+  for (let move of moves) {
+      switch(move) {
+          case 'U': y++ ;break;
+          case 'D': y-- ;break;
+          case 'L': x-- ;break;
+          case 'R': x++ ;break;
+      }
+  }
+  return x === 0 && y === 0
+};
+
+// using hashmap
 var judgeCircle = function (moves) {
   let hashmap = {};
   moves.split("").forEach((x) => {
@@ -10,7 +25,3 @@ var judgeCircle = function (moves) {
 let moves1 = "UD";
 
 console.log(judgeCircle(moves1));
-
-//LR cancel out
-// UD cancel out
-// hash map
