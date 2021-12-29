@@ -12,6 +12,8 @@ var judgeCircle = function(moves) {
   return x === 0 && y === 0
 };
 
+// https://leetcode.com/problems/robot-return-to-origin/discuss/174491/Javascript-100-using-O(n)-time-O(1)-space
+
 // using hashmap
 var judgeCircle = function (moves) {
   let hashmap = {};
