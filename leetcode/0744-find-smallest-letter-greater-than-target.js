@@ -1,3 +1,12 @@
+// another way
+var nextGreatestLetter = function(letters, target) {
+  for(const letter of letters) {
+      if(target < letter) return letter
+  }
+  return letters[0]
+};
+
+// first try
 var nextGreatestLetter = function (letters, target) {
   let alpha = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
     idx = alpha.indexOf(target);
