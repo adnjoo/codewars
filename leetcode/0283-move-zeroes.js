@@ -1,4 +1,4 @@
-// second try
+// second try ~ 131ms, 44mb
 var moveZeroes = function (nums) {
   let count = 0;
   nums.forEach((x) => {
