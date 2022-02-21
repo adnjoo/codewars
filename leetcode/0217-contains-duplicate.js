@@ -1,3 +1,16 @@
+// another hash map but returns early if dup found
+
+var containsDuplicate2 = function (nums) {
+  // hash table
+  let dict = {};
+  for (let i = 0; i < nums.length; i++) {
+    console.log(dict);
+    if (dict[nums[i]] == 1) return true;
+    else dict[nums[i]] = 1;
+  }
+  return false;
+};
+
 // hash map
 
 var containsDuplicate = function (nums) {
