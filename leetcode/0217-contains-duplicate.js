@@ -1,4 +1,5 @@
-// another hash map but returns early if dup found
+// another hash map method but returns early if dup found
+// time complexity: at most O(N) - must run through entire input or less
 
 var containsDuplicate2 = function (nums) {
   // hash table
@@ -11,7 +12,8 @@ var containsDuplicate2 = function (nums) {
   return false;
 };
 
-// hash map
+// hash map method
+// time complexity: at least O(N) - must run through entire input
 
 var containsDuplicate = function (nums) {
   let count = {};
