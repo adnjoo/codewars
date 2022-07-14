@@ -1,13 +1,15 @@
 # TC: O(1) - hashmap lookup
 # utilize hashmap
-def twoSum(nums, target):
+
+def twoSum(self, nums, target):
     dict = {}
-    for i, n in enumerate(nums):
-        m = target - n
-        if m in dict:
-            return [dict[m], i]
+    # sum megapost sol - https://tinyurl.com/yttmf4e4
+    for idx, ele in enumerate(nums):
+        remain = target - ele
+        if remain in dict:
+            return [dict[remain], idx]
         else:
-            dict[n] = i
+            dict[ele] = idx
 
 # TC: O N^2
 # nested for loop
